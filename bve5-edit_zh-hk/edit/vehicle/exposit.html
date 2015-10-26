@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列車屬性解釋 - Bve trainsim</title>
+<link href="http://bvets.net/basic.css" rel="stylesheet" type="text/css">
+<link href="../../zh-tw.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p><font size="5"><strong>列車屬性解釋</strong></font></p>
+<p><br />
+</p>
+<p><font size="3"><strong><a name="pistonarea" id="pistonarea"></a>PistonArea</strong></font></p>
+<p>在 1:1 比例，機械損損程度為 0 的情況下，每一車卡的氣缸的相當受壓面積。此值由以下算式計算：</p>
+<blockquote>
+  <p><img src="http://bvets.net/edit/vehicle/images/eq_area.png" alt="数式" width="92" height="33" /></p>
+</blockquote>
+<p>在此算式中， A: 每一車卡的氣缸的相當受壓面積 [m<sup>2</sup>]、k: 慣性係數、m: 一卡車的重量 [kg]、a: 減速度 [m/s<sup>2</sup>]、μ: 閘瓦的摩擦係數、p: 制動缸氣壓 [Pa]。 </p>
+<p><br />
+</p>
+<p><font size="3"><strong><a name="runningresistancefactor" id="runningresistancefactor"></a>RunningResistanceFactor</strong></font></p>
+<p>滾動阻力的 A、B、C 係數。滾動阻力，由以下算式計算。</p>
+<blockquote>
+  <p><img src="http://bvets.net/edit/vehicle/images/eq_frr.png" alt="数式" width="112" height="14" /></p>
+</blockquote>
+<p>在此算式中， F<sub>R</sub>: 整列列車的滾動阻力 [N]、v: 行駛速度 [m/s]、a, b, c: 滾動阻力係數。如果在列車屬性檔案中沒有設定滾動阻力係數，以下的預設值將會被使用：</p>
+<blockquote>
+  <p>a = 0.275 + 0.076 × (MotorcarCount + TrailerCount - 1)<br />
+    b = 
+    0.000242 × MotorcarCount × MotorcarWeight + 0.0000275 × TrailerCount × TrailerWeight<br />
+    c = 0.0162  × MotorcarCount × MotorcarWeight + 0.00765 × TrailerCount × TrailerWeight</p>
+</blockquote>
+<p><br />
+</p>
+<p><font size="3"><strong><a name="curveresistancefactor" id="curveresistancefactor"></a>CurveResistanceFactor</strong></font></p>
+<p>曲線阻力係數。曲線阻力，由以下算式計算。</p>
+<blockquote>
+  <p><img src="http://bvets.net/edit/vehicle/images/eq_frc.png" alt="数式" width="52" height="30" /></p>
+</blockquote>
+<p>在此算式中， F<sub>C</sub>: 整列列車的曲線阻力 [N]、R: 曲線半徑 [m]、d: 曲線阻力係數。<font size="3"></font>如果在列車屬性檔案中沒有設定曲線阻力係數，以下的預設值將會被使用：</p>
+<blockquote>
+  <p>d = 9.80665 × 0.6 × (MotorcarCount × MotorcarWeight +  TrailerCount × TrailerWeight)</p>
+</blockquote>
+<p align="center"><font size="1">&copy; 2012 mackoy</font></p>
+</body>
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+</html>  

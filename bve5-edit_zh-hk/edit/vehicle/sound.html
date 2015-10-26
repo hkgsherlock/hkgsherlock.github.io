@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列車聲音 - Bve trainsim</title>
+<link href="http://bvets.net/basic.css" rel="stylesheet" type="text/css">
+<link href="../../zh-tw.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p><strong><font size="5">列車聲音檔案</font></strong><br />
+Vehicle Sound File</p>
+<p><br>
+</p>
+<hr />
+<p><strong><font size="3">記述格式</font></strong></p>
+<p>以<a href="http://zh.wikipedia.org/zh-hk/INI%E6%A0%BC%E5%BC%8F" target="_top">INI 格式</a>作為基本記述格式。文字編碼為 UTF-8。</p>
+<table border="0" cellpadding="3" cellspacing="0">
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono">Bvets Vehicle Sound 2.0</font></td>
+    <td valign="top"><font size="2">此首行文字</font>必須記載檔案格式。</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono">[<em>section1</em>]</font></td>
+    <td valign="top">宣告新部分。部分的名稱以「[ ]」括起。</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono"><em>key1</em> = <em>path1</em></font></td>
+    <td valign="top">設定該部分某聲音項目的 Wave 聲音檔的位置。"=" 的左方為聲音項目名稱，而右方則為 Wave 聲音檔的位置。</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono"><em>key2</em> = <em>path2</em></font></td>
+    <td valign="top"><br /></td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono">...</font></td>
+    <td valign="top"><br /></td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono">;<em>comment</em></font></td>
+    <td valign="top">以「;」（分號）作為該行文字的開端的話將會被無視。</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono">[<em>section2</em>]</font></td>
+    <td valign="top">宣告另一個新部分。</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono"><em>key3</em> = <em>path3</em></font></td>
+    <td valign="top"><br /></td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap" bgcolor="#EEEEEE"><font face="Courier New, Courier, mono">...</font></td>
+    <td valign="top"><br /></td>
+  </tr></table>
+<p><br />
+</p>
+<hr />
+<p><strong><font size="3">部分</font></strong></p>
+<p><br />
+</p>
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td nowrap="nowrap" bgcolor="#eeeeee">名稱</td>
+    <td bgcolor="#eeeeee">說明</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Run</td>
+    <td valign="top">車輪滾動聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Flange</td>
+    <td valign="top">行駛曲軌時的磨擦聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Motor</td>
+    <td valign="top">摩打有電流經過時發出的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Joint</td>
+    <td valign="top">通過道岔（波口）軌條間的空隙時，以行駛速度作與聲音播放速度成正比例，播放一次的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Brake</td>
+    <td valign="top">制動系統中各部件氣壓變動時產生的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Compressor</td>
+    <td valign="top">空氣壓縮機運作時產生的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">AirSpring</td>
+    <td valign="top">懸掛系統中氣袋承壓變動時產生的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Breaker</td>
+    <td valign="top">斷流器運作的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Horn</td>
+    <td valign="top">響鞍</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Door</td>
+    <td valign="top">車門開關聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Ats</td>
+    <td valign="top">由 ATS 插件控制其運作的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Buzzer</td>
+    <td valign="top">駕駛室蜂鳴聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Pilot Lamp</td>
+    <td valign="top">車門開關狀態燈亮、滅時產生的聲音</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Brake Handle</td>
+    <td valign="top">制動桿操作聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Master Controller</td>
+    <td valign="top">動力桿操作聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Reverser</td>
+    <td valign="top">逆轉桿操作聲</td>
+  </tr>
+  <tr>
+    <td valign="top" nowrap="nowrap">Others</td>
+    <td valign="top">其他</td>
+  </tr>
+</table>
+<p><br />
+</p>
+<hr />
+<p><strong><font size="3">キー</font></strong></p>
+<p><br>
+</p>
+<p><b>[Run] 部分</b><br>
+車輪滾動聲</p>
+<p>屬性名稱可為 0 及以上的整數</p>
+<p><br>
+</p>
+<p><b>[Flange] 部分</b><br>
+行駛曲軌時的磨擦聲</p>
+<p>屬性名稱可為 0 及以上的整數</p>
+<p><br>
+</p>
+<p><b>[Motor] 部分</b><br>
+摩打上</p>
+<p>屬性名稱可為 0 及以上的整數</p>
+<p><br>
+</p>
+<p><b>[Joint] 部分</b><br>
+經過道岔（波口）軌條間的空隙時，以行駛速度作與聲音播放速度成正比例，播放一次的聲音</p>
+<p>屬性名稱可為 0 及以上的整數</p>
+<p><br>
+</p>
+<p><b>[Brake] 部分</b><br>
+制動系統中各部件氣壓變動時產生的聲音</p>
+<p>BcReleaseHigh<br>
+制動缸從高壓緩解時產生的聲音</p>
+<p> BcRelease<br>
+制動缸緩解時產生的聲音</p>
+<p> BcReleaseFull<br>
+制動缸完全緩解時產生的聲音</p>
+<p> Emergency<br>
+制動管緊急減壓的聲音</p>
+<p><br>
+</p>
+<p><b>[Compressor] 部分</b><br>
+空氣壓縮機運作時產生的聲音</p>
+<p>Attack<br>
+啟動頭 5 秒的聲音</p>
+<p>Loop<br>
+運作時的聲音</p>
+<p>Release<br>
+停止時的聲音</p>
+<p><br>
+</p>
+<p><b>[AirSpring] 部分</b><br>
+懸掛系統中氣袋承壓變動時產生的聲音</p>
+<p>LeftRelease<br>
+左邊懸掛氣袋的排氣聲</p>
+<p>RightRelease<br>
+右邊懸掛氣袋的排氣聲</p>
+<p>LeftApply<br>
+左邊懸掛氣袋的送風聲</p>
+<p>RightApply<br>
+右邊懸掛氣袋的排氣聲</p>
+<p><br>
+</p>
+<p><b>[Breaker] 部分</b><br>
+斷流器運作的聲音</p>
+<p>On<br>
+斷路閉合時產生的聲音</p>
+<p>Off<br>
+斷路斷開時產生的聲音</p>
+<p><br>
+</p>
+<p><b>[Horn] 部分</b><br>
+響鞍</p>
+<p>Primary<br>
+警笛 1</p>
+<p>PrimaryRelease<br>
+  警笛 1 餘韻</p>
+<p> Secondary<br>
+  警笛 2</p>
+<p>SecondaryRelease<br>
+  警笛 2 餘韻</p>
+<p><br>
+</p>
+<p><b>[Door] 部分</b><br>
+車門開關聲</p>
+<p>OpenLeft<br>
+左邊車門打開聲</p>
+<p> OpenRight<br>
+右邊車門打開聲</p>
+<p> CloseLeft<br>
+左邊車門關上聲</p>
+<p> CloseRight<br>
+右邊車門關上聲</p>
+<p><br>
+</p>
+<p><b>[Ats] 部分</b><br>
+由 ATS 插件控制其運作的聲音</p>
+<p>屬性名稱可為 0 至 255 之間的任何整數</p>
+<p><br>
+</p>
+<p><b>[Buzzer] 部分</b><br>
+駕駛室蜂鳴聲</p>
+<p>Correct<br>
+「停止位置更正」蜂鳴聲</p>
+<p><br>
+</p>
+<p> <b>[Pilot Lamp] 部分</b><br>
+車門開關狀態燈亮、滅時產生的聲音</p>
+<p>On<br>
+亮燈聲</p>
+<p> Off<br>
+熄滅聲</p>
+<p><br>
+</p>
+<p><b>[Brake Handle] 部分</b><br>
+制動桿操作聲</p>
+<p>Apply<br>
+制動桿格數上升時的操作聲</p>
+<p>Release<br>
+制動桿格數下降時的操作聲</p>
+<p>Min<br>
+制動桿格數到底時的操作聲</p>
+<p>Max<br>
+制動桿格數到頂時的操作聲</p>
+<p><br>
+</p>
+<p><b>[Master Controller] 部分</b><br>
+動力桿操作聲</p>
+<p>Apply<br>
+動力桿格數上升時的操作聲</p>
+<p>Release<br>
+動力桿格數下降時的操作聲</p>
+<p>Min<br>
+動力桿格數到底時的操作聲</p>
+<p>Max<br>
+動力桿格數到頂時的操作聲</p>
+<p><br>
+</p>
+<p><b>[Reverser] 部分</b><br>
+逆轉桿操作聲</p>
+<p>On<br>
+移向前或後時產生的聲音</p>
+<p>Off<br>
+移向中間時產生的聲音</p>
+<p><br>
+</p>
+<p><b>[Others] 部分</b><br>
+其他聲音</p>
+<p>Noise<br>
+平時列車運作時產生的聲音</p>
+<p>Shoe<br>
+制動皮/碟制動噪音</p>
+<p align="center"><font size="1">&copy; 2012 mackoy</font></p>
+</body>
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+</html>

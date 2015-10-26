@@ -1,0 +1,360 @@
+<html>
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="http://bvets.net/basic.css" rel="stylesheet" type="text/css">
+<link href="../../zh-tw.css" rel="stylesheet" type="text/css">
+<title>ATS 插件函數 - Bve trainsim</title></head>
+<body link="#3366CC" vlink="#6699FF" text="#333333" bgcolor="#FFFFFF">
+<p><font size="5"><strong>ATS 插件函數</strong></font></p>
+<hr>
+<p><font size="3"><strong>Load</strong></font></p>
+<p><font size="2">當載入插件時被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI Load();</font></p>
+<hr>
+<p><font size="3"><strong>Dispose</strong></font></p>
+<p><font size="2">當釋放插件時被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI Dispose();</font></p>
+<hr>
+<p><font size="3"><strong>GetPluginVersion</strong></font></p>
+<p><font size="2">當插件被主程式查詢其版本時被呼叫的函數，並傳回一整數值到主程式。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API int WINAPI GetPluginVersion();</font></p>
+<p><font size="2"><strong>傳回値</strong></font></p>
+<p><font size="2">本插件的版本號。必須傳回 ATS_VERSION 的值。</font></p>
+<hr>
+<p><font size="3"><strong>SetVehicleSpec</strong></font></p>
+<p><font size="2">當列車載入時被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI SetVehicleSpec(
+  ATS_VEHICLESPEC	<i>vehicleSpec</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">vehicleSpec</font></i></dt>
+  <dd><font size="2">列車規格。</font></dd>
+</dl>
+<hr>
+<p><font size="3"><strong>Initialize</strong></font></p>
+<p><font size="2">遊戲開始時（或選擇「Reset Scenario」、跳轉車站時）被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI Initialize(
+  int	<i>brake</i>
+  );</font></p>
+<P><font size="2"><strong>屬性</strong></font></P>
+<dl>
+  <dt><i><font size="2">brake</font></i></dt>
+  <dd><font size="2">當遊戲開始時制動閥的狀態。以下為本函數可能傳入的參數。</font><br>
+    <br>
+    <table border="1" cellspacing="0" bordercolor="#A0A0A0">
+      <tr> 
+        <td><font size="2">ATS_INIT_SVC</font></td>
+        <td><font size="2">常用制動</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_INIT_EMG</font></td>
+        <td><font size="2">緊急制動</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_INIT_REMOVED</font></td>
+        <td><font size="2">保安裝置未啟動</font></td>
+      </tr>
+    </table>
+  </dd>
+</dl>
+<hr>
+<p><font size="3"><strong>Elapse</strong></font></p>
+<p><font size="2">每一幀都會被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API ATS_HANDLES WINAPI Elapse(
+  ATS_VEHICLESTATE	<i>vehicleState</i>,
+  int[]			<i>panel</i>,
+  int[]			<i>sound</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">vehicleState</font></i></dt>
+  <dd><font size="2">列車狀態。</font></dd>
+</dl>
+<dl>
+  <dt><font size="2"><i>panel</i></font></dt>
+  <dd><font size="2">顯示於標板組件的值</font></dd>
+</dl>
+<dl>
+  <dt><font size="2"><i>sound</i></font></dt>
+  <dd><font size="2">每個聲音的分貝值除以 100[dB] 後的值。<br>
+    <br>
+    </font> 
+    <table border="1" cellspacing="0" bordercolor="#A0A0A0">
+      <tr> 
+        <td><font size="2"> ATS_SOUND_PLAY</font></td>
+        <td><font size="2">播放一次</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_SOUND_PLAYLOOPING</font></td>
+        <td><font size="2">重覆播放</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_SOUND_STOP</font></td>
+        <td><font size="2">停止</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_SOUND_CONTINUE</font></td>
+        <td><font size="2">維持該聲音的現狀</font></td>
+      </tr>
+    </table>
+  </dd>
+</dl>
+<p><font size="2">傳回値</font></p>
+<p><font size="2">輸出到 Bve trainsim 的逆轉器、動力器及制動器的值。</font></p>
+<hr>
+<p><font size="3"><strong>SetPower</strong></font></p>
+<p><font size="2">當動力桿被調節時所被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI SetPower(
+  int	<i>notch</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">notch</font></i></dt>
+  <dd><font size="2">格數。</font><font size="2"></font></dd>
+</dl>
+<hr>
+<p><font size="3"><strong>SetBrake</strong></font></p>
+<p><font size="2">當制動桿被調節時所被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI SetBrake(
+  int	<i>notch</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">notch</font></i></dt>
+  <dd><font size="2">格數。</font><font size="2"></font></dd>
+</dl>
+<hr>
+<p><font size="3"><strong>SetReverser</strong></font></p>
+<p><font size="2">當逆轉器被調節時所被呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI SetReverser(
+  int	<i>pos</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">pos</font></i></dt>
+  <dd><font size="2">逆轉桿位置。</font></dd>
+</dl>
+<hr>
+<p><font size="3"><strong>KeyDown</strong></font></p>
+<p><font size="2">當 ATS 的按紐被按下時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI KeyDown(
+  int	<i>atsKeyCode</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><font size="2"><i>atsKeyCode</i></font></dt>
+  <dd><font size="2">ATS 鍵的代號。以下為本函數可能傳入的參數。</font><br>
+    <br>
+    <table border="1" cellspacing="0" bordercolor="#A0A0A0">
+      <tr> 
+        <td><font size="2"> ATS_KEY_S</font></td>
+        <td><font size="2">S 鍵（預設為鍵盤上的 Space）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_A1</font></td>
+        <td><font size="2">A1 鍵（預設為鍵盤上的 Insert）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_A2</font></td>
+        <td><font size="2">A2 鍵（預設為鍵盤上的 Delete）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_B1</font></td>
+        <td><font size="2">B1 鍵（預設為鍵盤上的 Home）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_B2</font></td>
+        <td><font size="2">B2 鍵（預設為鍵盤上的 End）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_C1</font></td>
+        <td><font size="2">C1 鍵（預設為鍵盤上的 Page Up）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_C2</font></td>
+        <td><font size="2">C2 鍵（預設為鍵盤上的 Page Down）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_D</font></td>
+        <td><font size="2">D 鍵（預設為鍵盤上的 2）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_E</font></td>
+        <td><font size="2">E 鍵（預設為鍵盤上的 3）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_F</font></td>
+        <td><font size="2">F 鍵（預設為鍵盤上的 4）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_G</font></td>
+        <td><font size="2">G 鍵（預設為鍵盤上的 5）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_H</font></td>
+        <td><font size="2">H 鍵（預設為鍵盤上的 6）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_I</font></td>
+        <td><font size="2">I 鍵（預設為鍵盤上的 7）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_J</font></td>
+        <td><font size="2">J 鍵（預設為鍵盤上的 8）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_K</font></td>
+        <td><font size="2">K 鍵（預設為鍵盤上的 9）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_L</font></td>
+        <td><font size="2">L 鍵（預設為鍵盤上的 0）</font></td>
+      </tr>
+    </table>
+  </dd>
+</dl>
+<hr>
+<p><font size="3"><strong>KeyUp</strong></font></p>
+<p><font size="2">當 ATS 的按紐被放開時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI KeyUp(
+  int	<i>atsKeyCode</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><font size="2"><i>atsKeyCode</i></font></dt>
+  <dd><font size="2">ATS 鍵的代號。以下為本函數可能傳入的參數。</font><br>
+    <br>
+    <table border="1" cellspacing="0" bordercolor="#A0A0A0">
+      <tr> 
+        <td><font size="2"> ATS_KEY_S</font></td>
+        <td><font size="2">S 鍵（預設為鍵盤上的 Space）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_A1</font></td>
+        <td><font size="2">A1 鍵（預設為鍵盤上的 Insert）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_A2</font></td>
+        <td><font size="2">A2 鍵（預設為鍵盤上的 Delete）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_B1</font></td>
+        <td><font size="2">B1 鍵（預設為鍵盤上的 Home）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_B2</font></td>
+        <td><font size="2">B2 鍵（預設為鍵盤上的 End）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_C1</font></td>
+        <td><font size="2">C1 鍵（預設為鍵盤上的 Page Up）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_C2</font></td>
+        <td><font size="2">C2 鍵（預設為鍵盤上的 Page Down）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_D</font></td>
+        <td><font size="2">D 鍵（預設為鍵盤上的 2）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_E</font></td>
+        <td><font size="2">E 鍵（預設為鍵盤上的 3）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_F</font></td>
+        <td><font size="2">F 鍵（預設為鍵盤上的 4）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_G</font></td>
+        <td><font size="2">G 鍵（預設為鍵盤上的 5）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_H</font></td>
+        <td><font size="2">H 鍵（預設為鍵盤上的 6）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_I</font></td>
+        <td><font size="2">I 鍵（預設為鍵盤上的 7）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_J</font></td>
+        <td><font size="2">J 鍵（預設為鍵盤上的 8）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_K</font></td>
+        <td><font size="2">K 鍵（預設為鍵盤上的 9）</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_KEY_L</font></td>
+        <td><font size="2">L 鍵（預設為鍵盤上的 0）</font></td>
+      </tr>
+    </table>
+  </dd>
+</dl>
+<hr>
+<p><font size="3"><strong>HornBlow</strong></font></p>
+<p><font size="2">當響鞍時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI HornBlow(
+  int	<i>hornType</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">hornType</font></i></dt>
+  <dd><font size="2">響鞍類別。以下為本函數可能傳入的參數。<br>
+    <br>
+    </font> 
+    <table border="1" cellspacing="0" bordercolor="#A0A0A0">
+      <tr> 
+        <td><font size="2"> ATS_HORN_PRIMARY</font></td>
+        <td><font size="2">警笛1</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_HORN_SECONDARY</font></td>
+        <td><font size="2">警笛2</font></td>
+      </tr>
+      <tr> 
+        <td><font size="2">ATS_HORN_MUSIC</font></td>
+        <td><font size="2">音樂警笛</font></td>
+      </tr>
+    </table>
+  </dd>
+</dl>
+<hr>
+<p><font size="3"><strong>DoorOpen</strong></font></p>
+<p><font size="2">當車門開啟時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI DoorOpen();</font></p>
+<hr>
+<p><font size="3"><strong>DoorClose</strong></font></p>
+<p><font size="2">當車門關閉時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI DoorClose();</font></p>
+<hr>
+<p><font size="3"><strong>SetSignal</strong></font></p>
+<p><font size="2">當目前的</font><font size="2">閉塞訊號時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI SetSignal(
+  int	<i>signal</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">signal</font></i></dt>
+  <dd><font size="2">訊號編號。</font></dd>
+</dl>
+<hr>
+<p><font size="3"> <strong>SetBeaconData</strong></font></p>
+<p><font size="2">當駛過地上訊號器時所呼叫的函數。</font></p>
+<p><font face="Courier New, Courier, mono">ATS_API void WINAPI SetBeaconData(
+  ATS_BEACONDATA	<i>beaconData</i>
+  );</font></p>
+<p><font size="2"><strong>屬性</strong></font></p>
+<dl>
+  <dt><i><font size="2">beaconData</font></i></dt>
+  <dd><font size="2">列車上所接收到的資訊。</font></dd>
+</dl>
+<p align="right"><font size="1">&copy; 2012 mackoy</font></p>
+</body>
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+</html>
