@@ -1,5 +1,107 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
+/***/ "./components/Contacts/index.js":
+/*!**************************************!*\
+  !*** ./components/Contacts/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contacts; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var node_secret__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! node_secret */ "./node_modules/node_secret/index.js");
+/* harmony import */ var node_secret__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(node_secret__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+var _jsxFileName = "I:\\code\\github-page\\components\\Contacts\\index.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Contacts(_ref) {
+  var isPrint = _ref.isPrint;
+  return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    icon: "phone",
+    content: __jsx("a", {
+      href: "tel:".concat(node_secret__WEBPACK_IMPORTED_MODULE_1__["tel"]),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 17
+      }
+    }, node_secret__WEBPACK_IMPORTED_MODULE_1__["tel"]),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 13
+    }
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    icon: "mail",
+    content: __jsx("a", {
+      href: "mailto:".concat(node_secret__WEBPACK_IMPORTED_MODULE_1__["email"]),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 17
+      }
+    }, node_secret__WEBPACK_IMPORTED_MODULE_1__["email"]),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    icon: "github",
+    content: __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 17
+      }
+    }, "@", __jsx("a", {
+      href: "https://github.com/soumasandesu",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 21
+      }
+    }, "soumasandesu")),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
+  }), isPrint && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    icon: "home",
+    content: node_secret__WEBPACK_IMPORTED_MODULE_1__["addr"],
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 17
+    }
+  }));
+}
+;
+
+/***/ }),
+
 /***/ "./components/CornerGithub/github-icon.png":
 /*!*************************************************!*\
   !*** ./components/CornerGithub/github-icon.png ***!
@@ -17109,6 +17211,17 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+
+/***/ "./node_modules/node_secret/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/node_secret/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {tel:"+852 9587 4607",email:"charles.poon.138@gmail.com",addr:"Room 2505, 25/F, Fai Ming House, Chung Ming Court, Tseung Kwan O, N.T., Hong Kong"};
 
 /***/ }),
 
@@ -46070,11 +46183,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var _components_CornerGithub___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/CornerGithub/ */ "./components/CornerGithub/index.js");
 /* harmony import */ var _components_Head___WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Head/ */ "./components/Head/index.js");
-/* harmony import */ var _components_Paper___WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Paper/ */ "./components/Paper/index.js");
-/* harmony import */ var _components_Section___WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Section/ */ "./components/Section/index.js");
-/* harmony import */ var _components_Experience___WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Experience/ */ "./components/Experience/index.js");
-/* harmony import */ var _components_Education___WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Education/ */ "./components/Education/index.js");
-/* harmony import */ var _components_MadeHint___WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/MadeHint/ */ "./components/MadeHint/index.js");
+/* harmony import */ var _components_Contacts___WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Contacts/ */ "./components/Contacts/index.js");
+/* harmony import */ var _components_Paper___WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Paper/ */ "./components/Paper/index.js");
+/* harmony import */ var _components_Section___WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Section/ */ "./components/Section/index.js");
+/* harmony import */ var _components_Experience___WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Experience/ */ "./components/Experience/index.js");
+/* harmony import */ var _components_Education___WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Education/ */ "./components/Education/index.js");
+/* harmony import */ var _components_MadeHint___WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/MadeHint/ */ "./components/MadeHint/index.js");
 
 
 var _this = undefined,
@@ -46096,6 +46210,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+
 var IndexPage = function IndexPage(_ref) {
   var isCv = _ref.cv,
       isPrint = _ref.p;
@@ -46103,7 +46218,7 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 1
     }
   }, __jsx(_components_CornerGithub___WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -46111,15 +46226,15 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 5
     }
-  }), __jsx(_components_Paper___WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx(_components_Paper___WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: "a4",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 5
     }
   }, __jsx(_components_Head___WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -46129,91 +46244,18 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 9
     }
-  }, isCv && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
+  }, isCv && __jsx(_components_Contacts___WEBPACK_IMPORTED_MODULE_5__["default"], {
+    isPrint: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
-      columnNumber: 17
+      columnNumber: 22
     }
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    icon: "phone",
-    content: __jsx("a", {
-      href: "tel:+852-9587-4607",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 25
-      }
-    }, "+852 9587 4607"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 21
-    }
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    icon: "mail",
-    content: __jsx("a", {
-      href: "mailto:charles.poon.138@gmail.com",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 25
-      }
-    }, "charles.poon.138@gmail.com"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 21
-    }
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    icon: "github",
-    content: __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 25
-      }
-    }, "@", __jsx("a", {
-      href: "https://github.com/soumasandesu",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 29
-      }
-    }, "soumasandesu")),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 21
-    }
-  }), isPrint && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    icon: "home",
-    content: __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 29
-      }
-    }, "Room 2505, 25/F, Fai Ming House, Chung Ming Court, Tseung Kwan O, N.T., Hong Kong"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 25
-    }
-  }))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  })), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     className: "intro",
     style: {
       marginBottom: "1em"
@@ -46221,22 +46263,22 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 25,
       columnNumber: 9
     }
   }, __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 26,
       columnNumber: 13
     }
-  }, "Results-oriented full-stack programmer with 2+ years experience developing, testing, and maintaining website and applications. Investigated new technologies and put into application elegantly to make sure that HKTVmall remained the leader in industry.")), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Results-oriented full-stack programmer with 2+ years experience developing, testing, and maintaining website and applications. Investigated new technologies and put into application elegantly to make sure that HKTVmall remained the leader in industry.")), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     name: "Tech Stack",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 32,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -46246,17 +46288,88 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 33,
       columnNumber: 13
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Row, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 34,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 21
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 25
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 29
+    }
+  }, "Java", __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
+    bulleted: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 33
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 37
+    }
+  }, "Maven, NPM, Yarn"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 37
+    }
+  }, "Spring, Spring Boot, JSP"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 37
+    }
+  }, "JUnit, Mockito, VisualVM, Selenium"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 29
+    }
+  }, "MySQL, Oracle, SQLite, MongoDB, H2"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 29
+    }
+  }, "EhCache, Redis"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 29
+    }
+  }, "RabbitMQ"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -46277,7 +46390,7 @@ var IndexPage = function IndexPage(_ref) {
       lineNumber: 64,
       columnNumber: 29
     }
-  }, "Java", __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
+  }, "JavaScript", __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
     bulleted: true,
     __self: _this,
     __source: {
@@ -46292,128 +46405,57 @@ var IndexPage = function IndexPage(_ref) {
       lineNumber: 67,
       columnNumber: 37
     }
-  }, "Maven, NPM, Yarn"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+  }, "NPM / Yarn, PM2"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70,
       columnNumber: 37
     }
-  }, "Spring, Spring Boot, JSP"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+  }, "Node.js, React, Angular, Babel, Webpack"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73,
       columnNumber: 37
     }
-  }, "JUnit, Mockito, VisualVM, Selenium"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+  }, "jQuery, Bootstrap"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 78,
       columnNumber: 29
     }
-  }, "MySQL, Oracle, SQLite, MongoDB, H2"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+  }, "Python (OpenCV, Numpy, Google App Engine)"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 81,
       columnNumber: 29
     }
-  }, "EhCache, Redis"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
+  }, "Docker, Jenkins"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 84,
       columnNumber: 29
     }
-  }, "RabbitMQ"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 21
-    }
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90,
-      columnNumber: 25
-    }
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 29
-    }
-  }, "JavaScript", __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
-    bulleted: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 33
-    }
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94,
-      columnNumber: 37
-    }
-  }, "NPM / Yarn, PM2"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 37
-    }
-  }, "Node.js, React, Angular, Babel, Webpack"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 37
-    }
-  }, "jQuery, Bootstrap"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 29
-    }
-  }, "Python (OpenCV, Numpy, Google App Engine)"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 108,
-      columnNumber: 29
-    }
-  }, "Docker, Jenkins"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 29
-    }
-  }, "SVN, Git (GitHub, GitLab)")))))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "SVN, Git (GitHub, GitLab)")))))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     name: "Experience",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 93,
       columnNumber: 9
     }
-  }, __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_8__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 94,
       columnNumber: 13
     }
-  }, __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_7__["default"].Item, {
+  }, __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_8__["default"].Item, {
     tags: ["Java", "Spring/Boot", "RabbitMQ", "Hybris"],
     image: __webpack_require__(/*! ./img/hktv.png */ "./pages/img/hktv.png"),
     position: "Programmer II",
@@ -46430,10 +46472,10 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 95,
       columnNumber: 17
     }
-  }), __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_7__["default"].Item, {
+  }), __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_8__["default"].Item, {
     tags: ["ReactJS", "Bootstrap", "Node.js", "Server-side Rendering"],
     image: __webpack_require__(/*! ./img/hket.png */ "./pages/img/hket.png"),
     position: "Developer",
@@ -46454,10 +46496,10 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 116,
       columnNumber: 17
     }
-  }), __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_7__["default"].Item, {
+  }), __jsx(_components_Experience___WEBPACK_IMPORTED_MODULE_8__["default"].Item, {
     tags: ["C#"],
     image: __webpack_require__(/*! ./img/ive.jpg */ "./pages/img/ive.jpg"),
     position: "Junior Programmer (Part-time)",
@@ -46467,16 +46509,16 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 143,
       columnNumber: 17
     }
-  }))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     id: "wk-skills",
     name: "Workplace Skills",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184,
+      lineNumber: 157,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
@@ -46484,14 +46526,14 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 158,
       columnNumber: 13
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186,
+      lineNumber: 159,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Label"], {
@@ -46502,14 +46544,14 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187,
+      lineNumber: 160,
       columnNumber: 21
     }
   }, "Problem solving"), "Eager to complete complex tasks with professional knowledge"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 165,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Label"], {
@@ -46520,14 +46562,14 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193,
+      lineNumber: 166,
       columnNumber: 21
     }
   }, "Creativity"), "Willing to improve and use new techniques, either on products or personal knowledge"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198,
+      lineNumber: 171,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Label"], {
@@ -46538,14 +46580,14 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199,
+      lineNumber: 172,
       columnNumber: 21
     }
   }, "Critical thinking"), "Diligent to solve problems in a most efficient and elegant way"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204,
+      lineNumber: 177,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Label"], {
@@ -46556,14 +46598,14 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205,
+      lineNumber: 178,
       columnNumber: 21
     }
   }, "Collaboration"), "Self-initiated and work well with team members"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 183,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Label"], {
@@ -46574,25 +46616,25 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211,
+      lineNumber: 184,
       columnNumber: 21
     }
-  }, "Self-management"), "Able to work under pressure with tight schedule"))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Self-management"), "Able to work under pressure with tight schedule"))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     name: "Education",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
+      lineNumber: 192,
       columnNumber: 9
     }
-  }, __jsx(_components_Education___WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, __jsx(_components_Education___WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220,
+      lineNumber: 193,
       columnNumber: 13
     }
-  }, __jsx(_components_Education___WEBPACK_IMPORTED_MODULE_8__["default"].Item, {
+  }, __jsx(_components_Education___WEBPACK_IMPORTED_MODULE_9__["default"].Item, {
     image: __webpack_require__(/*! ./img/hkbu.png */ "./pages/img/hkbu.png"),
     study: "Bachelor of Science (Honours) in Computer Science",
     school: "Hong Kong Baptist University",
@@ -46600,10 +46642,10 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221,
+      lineNumber: 194,
       columnNumber: 17
     }
-  }), __jsx(_components_Education___WEBPACK_IMPORTED_MODULE_8__["default"].Item, {
+  }), __jsx(_components_Education___WEBPACK_IMPORTED_MODULE_9__["default"].Item, {
     image: __webpack_require__(/*! ./img/ive.jpg */ "./pages/img/ive.jpg"),
     study: "Higher Diploma in Software Engineering",
     school: "Hong Kong Institute of Vocational Education (Lee Wai Lee)",
@@ -46611,22 +46653,22 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227,
+      lineNumber: 200,
       columnNumber: 17
     }
-  }))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }))), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     name: "Language",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236,
+      lineNumber: 209,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 237,
+      lineNumber: 210,
       columnNumber: 13
     }
   }, ["Cantonese (Native)", "English (Proficient)", "Mandarin (Proficient)"].map(function (e, i) {
@@ -46635,7 +46677,7 @@ var IndexPage = function IndexPage(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 242,
+        lineNumber: 215,
         columnNumber: 34
       }
     }, e);
@@ -46643,22 +46685,22 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247,
+      lineNumber: 220,
       columnNumber: 13
     }
-  }, __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     name: "Salary",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248,
+      lineNumber: 221,
       columnNumber: 17
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 249,
+      lineNumber: 222,
       columnNumber: 21
     }
   }, __jsx("h3", {
@@ -46668,21 +46710,21 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 250,
+      lineNumber: 223,
       columnNumber: 25
     }
   }, "Current"), "HK$ 26,000 / mo, 12 mo"), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 253,
+      lineNumber: 226,
       columnNumber: 21
     }
   }), __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 254,
+      lineNumber: 227,
       columnNumber: 21
     }
   }, __jsx("h3", {
@@ -46692,22 +46734,22 @@ var IndexPage = function IndexPage(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255,
+      lineNumber: 228,
       columnNumber: 25
     }
-  }, "Expected"), "HK$ 28,000 - HK$ 30,000 / mo. Negotiable.")), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Expected"), "HK$ 28,000 - HK$ 30,000 / mo. Negotiable.")), __jsx(_components_Section___WEBPACK_IMPORTED_MODULE_7__["default"], {
     name: "Availability",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259,
+      lineNumber: 232,
       columnNumber: 17
     }
-  }, "Immediate"))), __jsx(_components_MadeHint___WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, "Immediate"))), __jsx(_components_MadeHint___WEBPACK_IMPORTED_MODULE_10__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265,
+      lineNumber: 238,
       columnNumber: 5
     }
   }));
