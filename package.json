@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "next": "latest",
+    "next-images": "^1.4.0",
+    "node_secret": "https://github.com/soumasandesu/node_secret.git",
+    "qs": "^6.5.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.13.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
+  },
+  "scripts": {
+    "build": "next build",
+    "deploy": "gh-pages -d out/ -b master",
+    "dev": "next",
+    "export": "next export",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "file-loader": "^6.0.0",
+    "gh-pages": "^1.2.0",
+    "html-pdf": "^2.2.0",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.1"
+  }
+}
