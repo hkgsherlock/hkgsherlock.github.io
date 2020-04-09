@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "next build",
-    "deploy": "gh-pages -d out/ -b master",
+    "deploy": "touch out/.nojekyll && gh-pages -t -d out/ -b master",
     "dev": "next",
     "export": "next export",
     "start": "next start"
