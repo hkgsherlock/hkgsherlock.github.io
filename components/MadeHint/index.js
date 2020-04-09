@@ -22,7 +22,8 @@ export default function MadeHint () {
 
 				@media print {
 					div {
-						margin: 0 auto;
+						display: none;
+						margin: -1em auto 0;
 					}
 
 					div > span {

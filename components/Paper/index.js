@@ -10,13 +10,13 @@ const Paper = ({ size, children, ...props }) => {
 
 				@media screen {
 				    main.paper {
-				        padding: 10mm 1em;
+				        padding: 8mm 1em;
 				    }
 				}
 
 				@media screen and (min-width: 600px) {
 				    main.paper {
-				        padding: 10mm;
+				        padding: 8mm;
 				    }
 				}
 
@@ -24,14 +24,15 @@ const Paper = ({ size, children, ...props }) => {
 				    main.paper {
 				    	margin: 4em auto;
 				    	width: 210mm;
-				    	min-height: 297mm;
+				    	height: 297mm;
 				    	box-shadow: 0 0 1.5px #000, 0 0 20px rgba(0,0,0,.05);
 					}
 				}
 
 				@media print {
 				    main.paper {
-				    	
+				    	margin: 0;
+				    	padding: 0;
 					}
 				}
 			`}</style>
