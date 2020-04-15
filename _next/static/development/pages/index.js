@@ -46491,7 +46491,7 @@ var IndexPage = function IndexPage(_ref) {
     position: "Programmer II",
     company: "Hong Kong Television Network Limited",
     period: "Sep 2018 - Feb 2020",
-    duties: ["Gather requirements, study for enhancements and co-operate with parties under agile lifecycle", "Develop new features and maintain existing sub-systems: reliable, durable against inter-system errors", "Drafting API docs for use by O2O physical store POS app, aliging OpenAPI 3.0, OAuth 2.0 and JWT standards."],
+    duties: ["Gather requirements, study for enhancements and co-operate with parties under agile lifecycle", "Develop new features and maintain existing sub-systems: reliable, durable against inter-system errors", "Drafting API docs for use by O2O physical store POS app, aligning OpenAPI 3.0, OAuth 2.0 and JWT standards."],
     projects: [{
       name: "Physical Store Operation Support system",
       period: "Sep 2018 - Feb 2020"
